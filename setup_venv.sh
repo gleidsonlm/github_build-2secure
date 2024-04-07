@@ -24,13 +24,13 @@ activate_virtual_env() {
         exit 1
     fi
 
-#    if [ -f "$requirements_file" ]; then
-#        pip3 install -r "$requirements_file"
-#        echo "Requirements installed from '$requirements_file'."
-#    else
-#        echo "Requirements file '$requirements_file' not found."
-#        exit 1
-#    fi
+    if [ -f "$requirements_file" ]; then
+        pip3 install -r "$requirements_file"
+        echo "Requirements installed from '$requirements_file'."
+    else
+        echo "Requirements file '$requirements_file' not found."
+        exit 1
+    fi
 }
 
 activate_virtual_env
