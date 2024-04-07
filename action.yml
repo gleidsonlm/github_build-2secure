@@ -138,7 +138,6 @@ runs:
         path: actions
     - name: Setup Virtual Environment
       run: |
-        ls -R
         chmod +x ./actions/setup_venv.sh
         ./actions/setup_venv.sh
       shell: bash
