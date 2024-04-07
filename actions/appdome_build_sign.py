@@ -144,7 +144,7 @@ def main():
         google_play_signing = f"--google_play_signing" if args.google_play_signing != "false" else ""
         signing_fingerprint = f"--signing_fingerprint {args.signing_fingerprint}" if args.signing_fingerprint != "None" else ""
 
-        cmd = f"python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} --app {app_file} " \
+        cmd = f"appdome_virtual_env/bin/python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} --app {app_file} " \
               f"--sign_on_appdome -fs {fusion_set} {team_id} --keystore {keystore_file[0]} " \
               f"--keystore_pass {keystore_pass} --output {output_path}/{output_file_name}{app_ext} " \
               f"--certificate_output {output_path}/certificate.pdf {keystore_alias} {keystore_key_pass} " \
@@ -157,7 +157,7 @@ def main():
         google_play_signing = f"--google_play_signing" if args.google_play_signing != "false" else ""
         signing_fingerprint = f"--signing_fingerprint {args.signing_fingerprint}" if args.signing_fingerprint != "None" else ""
 
-        cmd = f"python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} " \
+        cmd = f"appdome_virtual_env/bin/python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} " \
               f"--app {app_file} --private_signing -fs {fusion_set} {team_id} " \
               f"--output {output_path}/{output_file_name}{app_ext} --certificate_output {output_path}/certificate.pdf " \
               f"{google_play_signing} {signing_fingerprint} {provision_profiles}{build_with_logs}{sign_second_output}" \
@@ -169,7 +169,7 @@ def main():
         google_play_signing = f"--google_play_signing" if args.google_play_signing != "false" else ""
         signing_fingerprint = f"--signing_fingerprint {args.signing_fingerprint}" if args.signing_fingerprint != "None" else ""
 
-        cmd = f"python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} " \
+        cmd = f"appdome_virtual_env/bin/python3 appdome/appdome-api-python/appdome_api.py -key {appdome_api_key} " \
               f"--app {app_file} --auto_dev_private_signing -fs {fusion_set} {team_id} " \
               f"--output {output_path}/{output_file_name}.sh --certificate_output {output_path}/certificate.pdf " \
               f"{google_play_signing} {signing_fingerprint} {provision_profiles} {entitlements}{build_with_logs}" \
