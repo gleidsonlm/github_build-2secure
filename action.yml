@@ -132,8 +132,8 @@ runs:
         path: appdome
     - name: Setup Virtual Environment
       run: |
-        chmod +x .setup_venv.sh
-        .setup_venv.sh
+        chmod +x ./setup_venv.sh
+        ./setup_venv.sh
       shell: bash
     - name: Cloning actions
       uses: actions/checkout@master
