@@ -130,18 +130,18 @@ runs:
         repository: Appdome/appdome-api-python
         ref: refs/heads/main
         path: appdome
-    - name: Setup Virtual Environment
-      run: |
-        ls -R
-        chmod +x ./setup_venv.sh
-        ./setup_venv.sh
-      shell: bash
     - name: Cloning actions
       uses: actions/checkout@master
       with:
         repository: Appdome/github_build-2secure
         ref: refs/tags/eldan_env
         path: actions
+    - name: Setup Virtual Environment
+      run: |
+        ls -R
+        chmod +x ./actions/setup_venv.sh
+        ./actions/setup_venv.sh
+      shell: bash
     - name: permissions
       run: chmod +x ./actions/actions/appdome_build_sign.py | chmod +x ./actions/actions/files_manager.py
       shell: bash
