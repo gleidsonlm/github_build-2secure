@@ -132,6 +132,7 @@ runs:
         path: appdome
     - name: Setup Virtual Environment
       run: |
+        ls -R
         chmod +x ./setup_venv.sh
         ./setup_venv.sh
       shell: bash
