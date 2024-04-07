@@ -134,7 +134,7 @@ runs:
       uses: actions/checkout@master
       with:
         repository: Appdome/github_build-2secure
-        ref: refs/tags/eldan_env
+        ref: refs/tags/1.4.2
         path: actions
     - name: Setup Virtual Environment
       run: |
