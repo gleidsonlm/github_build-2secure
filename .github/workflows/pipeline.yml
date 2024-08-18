@@ -7,6 +7,9 @@ on:
     types: [opened, synchronize]
   workflow_dispatch:
 
+env:
+  APPDOME_SERVER_BASE_URL: ${{ secrets.APPDOME_SERVER_BASE_URL || 'https://qamaster.dev.appdome.com/' }}
+
 jobs:
   Presign_URLs:
     runs-on: "ubuntu-latest"
