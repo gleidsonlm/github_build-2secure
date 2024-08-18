@@ -63,7 +63,7 @@ jobs:
           else
             google_play_signing=false
           fi
-          build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "None")
+          build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
           output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
