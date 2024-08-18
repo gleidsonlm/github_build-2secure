@@ -66,7 +66,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
   
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -138,7 +138,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -209,7 +209,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -287,7 +287,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "SECOND_OUTPUT=${second_output}" >> $GITHUB_OUTPUT
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
@@ -375,7 +375,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "SECOND_OUTPUT=${second_output}" >> $GITHUB_OUTPUT
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
@@ -457,7 +457,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -528,7 +528,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -596,7 +596,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -664,7 +664,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -737,7 +737,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -808,7 +808,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
@@ -879,7 +879,7 @@ jobs:
           build_to_test_options=("bitbar" "browserstack" "lambdatest" "saucelabs" "perfecto" "tosca" "aws" "firebase" "kobiton" "None")
           build_to_test_index=$((RANDOM % ${#build_to_test_options[@]}))
           output_name_options=("None" "test_app" "test_dir/test_app" "test_dir/test_app.aab" "test_app.apk")
-          output_name_index=$((RANDOM % ${#build_to_test_options[@]}))
+          output_name_index=$((RANDOM % ${#output_name_options[@]}))
 
           echo "BUILD_WITH_LOGS=${build_with_logs}" >> $GITHUB_OUTPUT
           echo "OUTPUT_APP_NAME=${output_name_options[$output_name_index]}" >> $GITHUB_OUTPUT
