@@ -3,7 +3,7 @@ import glob
 import sys
 import os
 import subprocess
-
+# test
 DEFAULT_OUTPUT_PATH = './output'
 DEFAULT_OUTPUT_NAME = "Appdome_secured_app"
 
