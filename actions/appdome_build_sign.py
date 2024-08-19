@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument("--sign_second_output", dest='sign_second_output', required=False,
                         help="Universal apk output for aab apps?")
     parser.add_argument("-bt", dest='build_to_test', required=False,
-                        help="saucelabs OR bitbar OR lambdatest OR browserstack OR perfecto OR tosca OR aws OR firebase OR Kobiton OR None")
+                        help="One of : saucelabs, bitbar, lambdatest, browserstack, perfecto, tosca, aws_device_farm, firebase, Kobiton, katalon None")
     parser.add_argument("-o", dest='output_name', required=False,
                         help="Output app name")
     return parser.parse_args()
