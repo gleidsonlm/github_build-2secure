@@ -36,7 +36,7 @@ jobs:
           KEYSTORE_ALIAS: ${{secrets.KEYSTORE_ALIAS}}
           KEYSTORE_KEY_PASSWORD: ${{secrets.KEYSTORE_KEY_PASS}}
           SECOND_OUTPUT: true - Optional - since version 1.1.0
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" | "katalon" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 
@@ -65,7 +65,7 @@ jobs:
           SIGN_FINGERPRINT: ${{secrets.APPDOME_SIGN_FINGERPRINT}}
           GOOGLE-PLAY-SIGNING: "true" - Optional
           SECOND_OUTPUT: true - Optional - since version 1.1.0
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "katalon" | "None"  - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 
@@ -93,7 +93,7 @@ jobs:
           SIGN_FINGERPRINT: ${{secrets.APPDOME_SIGN_FINGERPRINT}}
           GOOGLE-PLAY-SIGNING: "true" - Optional
           BUILD_WITH_LOGS: true - Optional
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 
@@ -128,7 +128,7 @@ jobs:
                               OR ${{secrets.ENTITLEMENTS_BASE64}}
                               OR ${{secrets.PROVISION_PROFILE_BASE64}}
           BUILD_WITH_LOGS: true - Optional
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 
@@ -160,7 +160,7 @@ jobs:
                               OR “<https_download_link>,<https_download_link>” ...
                               OR ${{secrets.ENTITLEMENTS_BASE64}}
           BUILD_WITH_LOGS: true - Optional
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 
@@ -192,7 +192,7 @@ jobs:
                               OR “<https_download_link>,<https_download_link>” ...
                               OR ${{secrets.ENTITLEMENTS_BASE64}}
           BUILD_WITH_LOGS: true - Optional
-          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "None" - Optional - since version 1.1.0
+          BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
 ```
 

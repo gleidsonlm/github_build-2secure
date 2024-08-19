@@ -94,8 +94,18 @@ inputs:
     default: "None"
     required: false
   BUILD_TO_TEST:
-    type: string
-    description: "Build to test option (e.g., bitbar, browserstack, lambdatest, saucelabs, AWS, perfecto, tosca, firebase, kobiton or any other vendor)"
+    options:
+      - bitbar
+      - browserstack
+      - lambdatest
+      - saucelabs
+      - AWS
+      - perfecto
+      - tosca
+      - firebase
+      - kobiton
+      - katalon
+    description: "Build to test option (e.g., bitbar, browserstack, lambdatest, saucelabs, AWS, perfecto, tosca, firebase, kobiton katalon)"
     required: false
     default: "None"
 runs:
