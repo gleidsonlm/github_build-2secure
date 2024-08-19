@@ -99,13 +99,13 @@ inputs:
       - browserstack
       - lambdatest
       - saucelabs
-      - AWS
+      - aws_device_farm
       - perfecto
       - tosca
       - firebase
       - kobiton
       - katalon
-    description: "Build to test option (e.g., bitbar, browserstack, lambdatest, saucelabs, AWS, perfecto, tosca, firebase, kobiton katalon)"
+    description: "Build to test option (e.g., bitbar, browserstack, lambdatest, saucelabs, aws_device_farm, perfecto, tosca, firebase, kobiton katalon)"
     required: false
     default: "None"
 runs:
