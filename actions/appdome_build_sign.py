@@ -3,7 +3,6 @@ import glob
 import sys
 import os
 import subprocess
-
 DEFAULT_OUTPUT_PATH = './output'
 DEFAULT_OUTPUT_NAME = "Appdome_secured_app"
 
@@ -38,7 +37,7 @@ def parse_args():
     parser.add_argument("--sign_second_output", dest='sign_second_output', required=False,
                         help="Universal apk output for aab apps?")
     parser.add_argument("-bt", dest='build_to_test', required=False,
-                        help="SAUCELABS OR BITBAR OR LAMBDATEST OR BROWSERSTACK")
+                        help="One of : saucelabs, bitbar, lambdatest, browserstack, perfecto, tosca, aws_device_farm, firebase, Kobiton, katalon None")
     parser.add_argument("-o", dest='output_name', required=False,
                         help="Output app name")
     return parser.parse_args()

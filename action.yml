@@ -94,13 +94,18 @@ inputs:
     default: "None"
     required: false
   BUILD_TO_TEST:
-    type: choice
-    description: "Build to test option"
     options:
       - bitbar
       - browserstack
       - lambdatest
       - saucelabs
+      - aws_device_farm
+      - perfecto
+      - tosca
+      - firebase
+      - kobiton
+      - katalon
+    description: "Build to test option (e.g., bitbar, browserstack, lambdatest, saucelabs, aws_device_farm, perfecto, tosca, firebase, kobiton katalon)"
     required: false
     default: "None"
 runs:
