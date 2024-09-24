@@ -38,6 +38,8 @@ jobs:
           SECOND_OUTPUT: true - Optional - since version 1.1.0
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "None" | "katalon" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
+          GOOGLE_APPLICATION_CREDENTIALS: -Optional (required for Crashlytics) - google application credentials json file for crashlitics OR https://download_link
 ```
 
 ### Android - PRIVATE_SIGNING
@@ -67,6 +69,8 @@ jobs:
           SECOND_OUTPUT: true - Optional - since version 1.1.0
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "katalon" | "None"  - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
+          GOOGLE_APPLICATION_CREDENTIALS: -Optional (required for Crashlytics) - google application credentials json file for crashlitics OR https://download_link
 ```
 
 ### Android - AUTO_DEV_SIGNING
@@ -95,6 +99,8 @@ jobs:
           BUILD_WITH_LOGS: true - Optional
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
+          GOOGLE_APPLICATION_CREDENTIALS: -Optional (required for Crashlytics) - google application credentials json file for crashlitics OR https://download_link
 ```
 
 ### iOS - AUTO_SIGNING
