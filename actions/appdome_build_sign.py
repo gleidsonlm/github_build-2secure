@@ -53,7 +53,7 @@ sys.path.extend([os.path.join(sys.path[0], '../..')])
 
 new_env = os.environ.copy()
 
-new_env["APPDOME_CLIENT_HEADER"] = "Github/1.0.0"
+new_env["APPDOME_CLIENT_HEADER"] = "Github/1.7.1"
 args = parse_args()
 
 
