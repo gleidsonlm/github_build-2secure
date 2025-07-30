@@ -27,7 +27,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id Android/iOS"
           SIGN_OPTIONS: "SIGN_ON_APPDOME"
           BUILD_WITH_LOGS: true - Optional
@@ -40,6 +40,8 @@ jobs:
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
           FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
           DATADOG_API_KEY: - Data Dog API_KEY (required for DataDog Deobfuscation)
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
 ### Android - PRIVATE_SIGNING
@@ -60,7 +62,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id Android"
           SIGN_OPTIONS: "PRIVATE_SIGNING"
           BUILD_WITH_LOGS: true - Optional
@@ -71,6 +73,8 @@ jobs:
           OUTPUT_APP_NAME: "Output_app_name" - Optional, will also apply for second output universal apk  - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
           FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
           DATADOG_API_KEY: - Data Dog API_KEY (required for DataDog Deobfuscation)****
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
 ### Android - AUTO_DEV_SIGNING
@@ -91,7 +95,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id Android"
           SIGN_OPTIONS: "AUTO_DEV_SIGNING"
           SIGN_FINGERPRINT: ${{secrets.APPDOME_SIGN_FINGERPRINT}}
@@ -101,6 +105,8 @@ jobs:
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
           FIREBASE_APP_ID: - Optional (required for Crashlytics) - App ID in Firebase project
           DATADOG_API_KEY: - Data Dog API_KEY (required for DataDog Deobfuscation)
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
 ### iOS - AUTO_SIGNING
@@ -121,7 +127,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id iOS"
           SIGN_OPTIONS: "SIGN_ON_APPDOME"
           CERTIFICATE_FILE: ${{secrets.CERTIFICATE}}
@@ -136,6 +142,8 @@ jobs:
           BUILD_WITH_LOGS: true - Optional
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
 ### iOS - PRIVATE_SIGNING
@@ -156,7 +164,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id iOS"
           SIGN_OPTIONS: "PRIVATE_SIGNING"
           MOBILE_PROVISION_PROFILE_FILE: "<path/on/repository>,<path/on/repository>" ...
@@ -168,6 +176,8 @@ jobs:
           BUILD_WITH_LOGS: true - Optional
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
 ### iOS - AUTO_DEV_SIGNING
@@ -188,7 +198,7 @@ jobs:
         with:
           APPDOME_API_TOKEN: ${{secrets.APPDOME_API_KEY}}
           TEAM-ID: "Your team id in appdome"
-          APP_FILE: "# none_protected_application can be pass as path/on/repository OR https://download_link"
+          APP_FILE: "# non_protected_application can be pass as path/on/repository OR https://download_link"
           FUSION_SET_ID: "Appdome Fusion Set_Id iOS"
           SIGN_OPTIONS: "AUTO_DEV_SIGNING"
           MOBILE_PROVISION_PROFILE_FILE: "<path/on/repository>,<path/on/repository>" ...
@@ -200,5 +210,7 @@ jobs:
           BUILD_WITH_LOGS: true - Optional
           BUILD_TO_TEST: "lambdatest" | "bitbar" | "browserstack" | "saucelabs" | "perfecto" | "tosca" | "aws_device_farm" | "firebase" | "kobiton" | "katalon" | "None" - Optional - since version 1.1.0
           OUTPUT_APP_NAME: "Output_app_name" - Optional - since version 1.2.0. # Note: Since version 1.3.2, this also supports a full path.
+          UPLOAD_ARTIFACTS: false - Optional, defaults to true. controls whether to upload the artifact or not
+          ARTIFACT_APP_SUFFIX: true - Optional, defaults to false. adds the OUTPUT_APP_NAME to the artifact name
 ```
 
